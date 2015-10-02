@@ -190,7 +190,7 @@ def host():
 
 
 @app.route(API_V1 + "host", methods=['POST'])
-@requires_auth
+@requires_auth('admin')
 def set_host():
     """
     set docker host

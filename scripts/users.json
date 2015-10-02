@@ -1,0 +1,18 @@
+{
+    "users": {
+        "burns": {
+            "password": "monty",
+            "firstName": "Charles Montgomery",
+            "lastName": "Burns",
+            "roles": [
+                "admin"
+            ]
+        },
+        "smithers": {
+            "password": "waylon",
+            "firstName": "Waylon",
+            "lastName": "Smithers",
+            "roles": []
+        }
+    }
+}
