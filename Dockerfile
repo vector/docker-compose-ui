@@ -12,6 +12,7 @@ RUN /env/bin/pip install -r requirements.txt
 ADD . /app
 
 VOLUME ["/opt/docker-compose-projects"]
+VOLUME ["/app"]
 
 COPY demo-projects /opt/docker-compose-projects
 
