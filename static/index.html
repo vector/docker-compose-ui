@@ -15,12 +15,16 @@
   <body ng-app="composeUiApp">
 
     <div class="container" ng-controller="MainCtrl">
-        <div class="row text-center">
-          <h1>VMG Staging Manager</h1>
+        <div class="row">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">VMG Staging Manager</a>
+            </div>
+          </nav>
         </div>
 
-        <div class="row text-center">
-          <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-3">
             <h3>Sites</h3>
             <div class="btn-group-vertical projects">
               <a ng-repeat="(id, path) in projects.projects | filterByName:query" class="btn btn-default btn-block" ng-class="{active: activeProject === id}" ng-click="$parent.activeProject = id" ng-href="#/project/{{id}}">{{id}}</a>
@@ -41,7 +45,7 @@
             <a class="btn btn-default btn-block" ng-href="/#/create"><i class="glyphicon glyphicon-plus"></i> Create new project</a>
             <a class="btn btn-primary btn-block" ng-href="#/"><i class="glyphicon glyphicon-wrench"></i> Settings</a>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-md-offset-1">
               <div ng-view=""></div>
           </div>
 
